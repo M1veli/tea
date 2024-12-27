@@ -1,0 +1,230 @@
+.header{
+    max-width: 1200px;
+    margin:30px auto;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &>a{
+        margin-right: 100px;
+    }
+
+    &>a>img {
+        width: 73.2px;
+        padding: 0 0 37px 0;
+    }
+}
+.teas {
+    display: flex;
+    white-space: nowrap;
+    flex-direction: row;
+    gap: 71px;
+
+
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.36;
+    text-align: left;
+
+
+
+        li:last-child{
+            margin: 0 27px 0 0;
+        }
+}
+.headerIcons {
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.profileIcons{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    >a{
+        margin-bottom: 7px;
+    }
+}
+
+.sidebar {
+    z-index: 0;
+    position: fixed;
+    left: -360px;
+    top: 0;
+    width: 360px;
+    background: #FFFFFF;
+    transition: all .5s ease;
+}
+#SBline{
+    width: 300px;
+    height: 2px;
+    background-color:#F7F2EA;
+    margin: 0px 30px;
+}
+.SBTeas {    
+    display: block;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #000000 ;
+    padding: 60px 145px;
+
+    >li:not(:last-child){
+        margin: 0 0 30px 0;
+    }
+}
+.SBContact {
+    display: block;
+    font-family: Open Sans;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 17.7px;
+    text-align: center;
+    color: #000000 ;
+    padding: 60px 116px;
+
+    >li:not(:last-child){
+        margin: 0 0 35px 0;
+    }
+}
+.SBfooter {
+    padding: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+    background: #F7F2EA;
+}
+
+#check {
+    display: none;
+}
+
+label #SBbtn {
+    display: none;
+    position: absolute;
+    top: 73px;
+    left: 64px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+label #SBBackBtn {
+    z-index: 1;
+    position: fixed;
+    top: 20px;
+    left: 64px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+label #SBBackBtn{
+    opacity: 0;
+    visibility: hidden;
+}
+
+#check:checked ~ label #SBbtn {
+    margin-left: 320px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#check:checked ~ label #SBBackBtn {
+    margin-left: 270px;
+    opacity: 1;
+    visibility: visible;
+}
+
+#check:checked ~ .sidebar {
+    left: 0;
+    box-shadow: 0 0 0 10000px #00000080;
+}
+
+
+@media (max-width: 1000px) {
+    .nav{
+        gap:50px;
+        justify-content:flex-start;
+    }
+
+    .teas{
+        flex:auto;
+    }
+
+    .headerIcons{
+        width: 130px;
+    }
+}
+
+@media (max-width: 999px) {
+    .teas { display: none}
+    label #SBbtn {
+        display: unset;
+    }
+    .nav{  
+        margin: 0 64px;
+        padding: 0 0 0 130px;
+        gap:0;
+        justify-content: flex-end;
+        &>a {
+            flex: none;
+            margin: auto;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .header{
+        margin: 10px auto;
+    }
+
+    .nav {
+        margin: 0 10px;
+        >a>img {
+            width: 39px;
+            padding: 0;
+        }
+    }
+
+    label #SBbtn {
+        top: 29px;
+        left: 10px;
+    }
+    #check:checked ~ .sidebar {
+        left: 60px;
+    }
+    #check:checked ~ label #SBBackBtn {
+        margin-left: 320px;
+    }
+}
+
+@media(max-width:425px) {
+    #check:checked ~ .sidebar {
+        left: 0;
+    }
+    #check:checked ~ label #SBBackBtn {
+        margin-left: 270px;
+    }
+}
+
+@media (max-width: 360px) {
+    .nav{
+        padding: 0 0 0 100px;
+    }
+    .headerIcons {
+        width: 100px;
+    }
+
+    #check:checked ~ .sidebar{
+        left: 0;
+    }
+
+    #check:checked ~ label #SBBackBtn {
+        margin-left: 270px;
+    }
+}

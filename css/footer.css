@@ -1,0 +1,322 @@
+.FooterProducts {
+    >p {
+font-size: 24px;
+font-weight: 400;
+line-height: 1.21;
+    }
+}
+.ProductsList {
+    margin-top: 53px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.FooterProductInList {
+    font-family: 'Open Sans';
+font-size: 16px;
+font-weight: 300;
+line-height: 1.36;
+text-align: left;
+
+
+}
+.FooterCompany {
+    padding-left: 65px;
+    >p {
+        font-size: 24px;
+font-weight: 400;
+line-height: 1.21;
+    }
+}
+.CompanyInfoList {
+    margin-top: 55px;
+    display: flex;
+        flex-direction: column;
+        gap: 20px;
+}
+.InfoListPart {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.36;
+    text-align: left;
+}
+.FooterInfoBlock {
+    display: flex;
+        gap: 45px;
+}
+.FooterCite {
+    margin-top: 82px;
+    display: flex;
+        gap: 20px;
+        max-width: 269px;
+        flex-direction: column;
+        >blockquote>p>q {
+            font-family: 'Open Sans';
+            font-size: 16px;
+            font-style: italic;
+            font-weight: 300;
+            line-height: 1.36;
+        }
+        >cite {
+            max-width: 129px;
+        }
+} 
+.FooterStayIn {
+    display: flex;
+    flex-direction: column;
+    max-height: 287px;
+    >p {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1.21;
+    }
+}
+.StayInText {
+    margin-top: 53px;
+    max-width: 270px;
+    font-family: 'Open Sans';
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.36;
+}
+.StayInContacts {
+    margin-top: 20px;
+    display: flex;
+    >img {
+        width: 57px;
+    }
+}
+
+.FooterComponents {   
+    max-width: 1200px;
+    padding: 100px 0;
+    justify-content: space-between;
+    display: flex;
+    margin: 0 auto;
+}
+
+
+#address {
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    >address {
+        margin-top: 18px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    >address>a {
+        font-family: 'Open Sans';
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 1.36;
+    }
+}
+
+footer {
+    background: #F7F2EA;
+}
+
+#social_networks {
+    margin-left: auto;
+    margin-top: auto;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-right: 20px;
+}
+
+#StayInCall::before {
+    content :  url('../imgs/mailIcon.png');
+    padding: 0 10px 0 0;
+}
+
+#StayInTextBack::before {
+    content : url('../imgs/telIcon.png');
+    padding: 0 10px 0 0;
+}
+
+#footerEnd {
+    max-width: 1200px;
+    margin-left: 200px;
+    padding-bottom: 20px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    >p {
+        font-family: 'Open Sans';
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.36;
+    }
+    >div {
+        padding-left: 65px;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+}
+
+#None {
+    width: 584px;
+    padding-left: 0;
+}
+
+@media(max-width:1220px) {
+    .FooterCite {
+        margin-top: unset;
+    }
+    .Footer {
+        margin: 0 10px;
+    }
+
+    .footerEnd {
+        margin: 0 10px;
+    }
+
+    .FooterInfoBlock {
+        gap: 55px;
+    }
+    
+}
+
+@media(max-width:888px) {
+    .FooterCompany {
+        padding-left: unset;
+    }
+    .FooterInfoBlock {
+        gap: 50px;
+        flex-direction: column;
+    }
+
+    .Footer {
+        margin: 0 65px;
+    }
+
+    #footerEnd>p {
+        margin-left: 65px;
+    }
+    #None {
+        width: 270px;
+        margin-right: 65px;
+    }
+
+    .FooterComponents {
+        padding: 50px 0 70px 0;
+    }
+
+    #footerEnd {
+        >div {
+            padding-left: unset;
+        }
+        padding-bottom: 10px;
+    }
+    #social_networks{
+        margin-top: 20px;
+    }
+}
+
+@media(max-width:660px) {
+    .Footer {
+        margin: 0 10px;
+    }
+
+        .FooterComponents {
+            justify-content: unset;
+            padding: 50px 0 50px 0;
+            flex-wrap: wrap;
+        }
+
+        .FooterCite {
+            max-width: 460px;
+                >cite {
+                    max-width: 298px;
+                }
+            }
+
+                .FooterStayIn { 
+                    max-height: unset;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    column-gap:50px;
+                    >p {
+                        margin: 0 auto;
+                    }
+                }
+
+                .FooterInfoBlock {
+                    margin: 0 auto;
+                    margin-top: 50px;
+                }
+
+                .FooterProducts {
+                    margin-right: 48px;
+                }
+                
+                .FooterCompany {
+                    margin: 0 auto;
+                }
+
+                .StayInText {
+                    margin: 0 auto;
+                    margin-top:20px;
+                    max-width:460px; 
+                    text-align: center;
+                }
+
+                #social_networks {
+                    margin: 0;
+                    margin-top: 50px;
+                }
+
+                .StayInContacts {
+                    margin-left: 31px;
+                }
+                #None {
+                    display: none;
+                    width: unset;
+                    margin-right: 43px;
+                }
+
+                #footerEnd {
+                    >p{
+                        margin-left: 10px;
+                        margin-right: auto;
+                    }
+                    justify-content: unset;
+                }
+
+                #address {
+                    margin-left: 30px;
+                }
+}
+
+@media(max-width:470px) {
+    .FooterStayIn {
+        flex-direction: column;
+        align-items:center;
+    }
+
+    #social_networks {
+        margin-top: 40px;
+    }
+    .FooterInfoBlock {
+        margin-top: 40px;
+        gap: 40px;
+    }
+
+    #footerEnd {
+        >div {
+            padding-left: unset;
+        }
+        >p {
+            margin-left: 10px;
+        }
+    }
+
+    #None {
+        margin-right: 23px;
+    }
+}

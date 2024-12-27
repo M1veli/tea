@@ -1,0 +1,98 @@
+.Prioritise {
+    padding: 145px calc(50% - 600px);
+    > p {
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 1.21;
+        text-align: center;
+    }
+}
+.Prioritise_cards {
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-between;
+}
+.priorCard {
+    gap:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    >img {
+        margin-top: 25px;
+        margin-right: -20px;
+    }
+}
+.priorHeadP {
+    font-family: "Open Sans";
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.36;
+}
+.priorInner {
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.36;
+}
+
+@media (max-width: 1237px) {
+    .Prioritise {
+        margin: 120px auto;
+    }
+    .Prioritise_cards {
+        column-gap: 210px;
+        margin-top: 60px;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 30px;
+        margin: 60px 65px 0 65px;
+    }
+}
+
+@media (max-width: 886px) {
+    .Prioritise_cards {
+        column-gap: unset;
+        row-gap: unset;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 688px) {
+    .Prioritise_cards {
+        flex-direction: column;
+        gap: 50px;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    .Prioritise {
+        margin: 60px auto;
+    }
+}
+
+@media (max-width: 400px) {
+    .Prioritise {
+        margin: 50px auto;
+
+        > p {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 1.21;
+        }
+    }
+
+    .priorHeadP {
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1.5;
+    }
+
+    .priorInner {
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 1.362;
+    }
+    .Prioritise_cards {
+        gap: 40px;
+    }
+}
